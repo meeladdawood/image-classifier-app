@@ -53,6 +53,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let results =  request.results as? [VNClassificationObservation] else {
                 fatalError("Model failed to process image")
             }
+            print(results)
         }
         
         let handler = VNImageRequestHandler(ciImage: image)
